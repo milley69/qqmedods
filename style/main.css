@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+body, p, a, span, h1, h2, h3, h4, h5, h6, button {
+  font-family: "Rubik";
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.container {
+  max-width: 1100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #dcdad7;
+}
+
+header {
+  background-color: #3e6595;
+  padding-bottom: 5px;
+  height: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #dcdad7;
+  margin-right: 40px;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.right-nav button {
+  color: #dcdad7;
+  cursor: pointer;
+  background: none;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+.right-nav button:last-child {
+  margin-right: 0;
+}
+
+.right-nav button:hover {
+  color: #fff;
+}
+
+.right-nav button:focus {
+  outline: none;
+}
+
+#regist-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+#regist {
+  max-width: 500px;
+  max-height: 500px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+#regist h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
