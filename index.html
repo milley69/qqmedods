@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" href="script/vue.js"></script>
+  <link rel="stylesheet" href="style/main.css">
+  <title>medods</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <!-- <button class="menu-toggle">Menu</button> -->
+        <div class="left-nav">
+          <a href="#">Главная</a>
+          <a href="#">О нас</a>
+          <a href="#">Партнеры</a>
+          <a href="#">Дипломы</a>
+          <a href="#">Специалисты</a>
+        </div>
+        <div class="right-nav">
+          <button type="button" name="login">Войти</button>
+          <button type="button" name="regist">Регистрация</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="regist-wrapper">
+    <div id="regist">
+      <h1>medods</h1>
+      <form class="" action="index.html" method="post">
+
+        <input name="name" type="text" pattern="[А-Яа-яЁё]" required placeholder="Ваше имя">
+
+        <input name="lastname" type="text" pattern="[А-Яа-яЁё]" required placeholder="Ваша фамилия">
+
+        <input name="patronymic" type="text" pattern="[А-Яа-яЁё]" placeholder="Ваше отчество">
+
+        <input type="date" name="date">
+
+        <input type="tel" name="tel" maxlength="12" placeholder="+7(___)___-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="tel" required>
+
+        <div class="gender-form">
+          <p>Ваш пол:</p>
+          <input type="radio" id="male" name="gender" value="мужской">
+          <label for="male">мужской</label><br>
+          <input type="radio" id="girl" name="gender" value="женский">
+          <label for="girl">женский</label><br>
+        </div>
+
+        <div class="group-form">
+          <p>Ваша группа</p>
+          <p><select multiple required size="3">
+              <option>VIP</option>
+              <option>Проблемные</option>
+              <option>ОМС</option>
+            </select></p>
+        </div>
+
+        <div class="doctor-form">
+          <p>Лечащий врач:</p>
+          <p>
+            <select>
+              <option>Иванов</option>
+              <option>Захаров</option>
+              <option>Чернышева</option>
+            </select>
+          </p>
+        </div>
+
+        <div class="sms-form">
+            <p>Согласны на отправку sms?</p>
+            <input type="checkbox" id="scales" name="Да" checked>
+            <label for="scales">Да</label>
+        </div>
+
+
+
+
+
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" href="script/main.js"></script>
+</body>
+
+</html>
