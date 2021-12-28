@@ -79,32 +79,98 @@ header nav a:hover {
   outline: none;
 }
 
-#regist-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
-
-#regist {
-  max-width: 500px;
-  max-height: 500px;
-  padding-left: 15px;
-  padding-right: 15px;
+#reg {
+  max-width: 360px;
+  background-color: #3e6595;
+  padding: 0 20px 15px;
   margin: 0 auto;
-  background-color: red;
-}
-
-#regist h1 {
   text-align: center;
 }
 
-form {
+#reg h1 {
+  margin: 0 auto 25px;
+}
+
+#reg form {
   display: flex;
+  align-items: center;
+  color: #fff;
   flex-wrap: wrap;
+}
+
+#reg form span {
+  color: red;
+}
+
+#reg form input {
+  background: #1c529566;
+  border-bottom: solid 1px #2fa99c;
+  text-align: center;
+  color: #fff;
+}
+
+#reg form input[id="date"]::-webkit-calendar-picker-indicator {
+  color: #fff;
+}
+
+#reg form input[id="date"]::-webkit-datetime-edit {
+  color: #fff;
+  padding-left: 3em;
+}
+
+#reg form input, #reg form select {
+  width: 8.3em;
+  font-size: 1.1em;
+}
+
+#reg form label[for="scales"],
+#reg form label[for="male"],
+#reg form label[for="girl"] {
+  font-size: 1.1em;
+}
+
+#reg form input[type="checkbox"], #reg form input[type="radio"] {
+  width: 1em;
+}
+
+#reg form label, #reg form .gender-form, #reg form .group-form, #reg form .doctor-form, #reg form .sms-form {
+  font-size: 0.9em;
+}
+
+#reg form select {
+  background: #3e6595;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+#reg form input[type="tel"]::-moz-placeholder {
+  color: #fff;
+}
+
+#reg form input[type="tel"]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#reg form input[type="tel"]:-ms-input-placeholder {
+  color: #fff;
+}
+
+#reg form input[type="tel"]::-ms-input-placeholder {
+  color: #fff;
+}
+
+#reg form input[type="tel"]::placeholder {
+  color: #fff;
+}
+
+.name, .lastname, .patronymic, .date, .tel, .gender-form, .group-form, .doctor-form, .sms-form {
+  height: 70px;
+  width: calc( ( 100% - 40px ) / 2);
+  margin: 0 0 20px;
+}
+
+.name:nth-child(2n-1), .lastname:nth-child(2n-1), .patronymic:nth-child(2n-1), .date:nth-child(2n-1), .tel:nth-child(2n-1), .gender-form:nth-child(2n-1), .group-form:nth-child(2n-1), .doctor-form:nth-child(2n-1), .sms-form:nth-child(2n-1) {
+  margin-left: 20px;
+  margin-right: 20px;
 }

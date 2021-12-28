@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" href="script/vue.js"></script>
   <link rel="stylesheet" href="style/main.css">
   <title>medods</title>
 </head>
@@ -29,57 +30,62 @@
     </div>
   </header>
 
-  <div id="regist-wrapper">
-    <div id="regist">
-      <h1>medods</h1>
-      <form class="" action="index.html" method="post">
-
-        <input name="name" type="text" pattern="[А-Яа-яЁё]" required placeholder="Ваше имя">
-
-        <input name="lastname" type="text" pattern="[А-Яа-яЁё]" required placeholder="Ваша фамилия">
-
-        <input name="patronymic" type="text" pattern="[А-Яа-яЁё]" placeholder="Ваше отчество">
-
-        <input type="date" name="" value="" placeholder="Ваша фамилия">
-
-        <input type="tel" name="tel" maxlength="12" placeholder="+7(___)___-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="tel" required>
-
-        <div class="gender-form">
-          <p>Ваш пол:</p>
-          <input type="radio" id="male" name="gender" value="мужской">
-          <label for="male">мужской</label><br>
-          <input type="radio" id="girl" name="gender" value="женский">
-          <label for="girl">женский</label><br>
-        </div>
-
-        <div class="group-form">
-          <p>Ваша группа</p>
-          <p><select multiple required size="3">
-              <option>VIP</option>
-              <option>Проблемные</option>
-              <option>ОМС</option>
-            </select></p>
-        </div>
-
-        <div class="doctor-form">
-          <p>Лечащий врач:</p>
-          <p>
-            <select>
-              <option>VIP</option>
-              <option>Проблемные</option>
-              <option>ОМС</option>
-            </select>
-          </p>
-        </div>
 
 
+  <div id="reg">
+    <h1>medods</h1>
+    <form class="" action="index.html" method="post">
+      <div class="name">
+        <label for="name">Ваше имя<span>*</span></label><br><input name="name" id="name" type="text" pattern="[А-Яа-яЁё]" required>
+      </div>
+      <div class="lastname">
+        <label for="lastname">Ваша фамилия<span>*</span></label><input name="lastname" id="lastname" type="text" pattern="[А-Яа-яЁё]" required>
+      </div>
+      <div class="patronymic">
+        <label for="patronymic">Ваше отчество</label><input name="patronymic" id="patronymic" type="text" pattern="[А-Яа-яЁё]">
+      </div>
+      <div class="date">
+        <label for="date">Ваша дата рождения<span>*</span></label><input id="date" type="date" placeholder="yyyy-mm-dd" max="2003-12-31">
+      </div>
+      <div class="tel">
+        <label for="tel">Ваш номер телефона<span>*</span></label><input type="tel" id="tel" name="tel" maxlength="12" placeholder="+7(___)___-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="tel" required>
+      </div>
+      <div class="gender-form">
+        <p>Ваш пол:</p>
+        <input type="radio" id="male" name="gender" value="мужской">
+        <label for="male">Мужской</label><br>
+        <input type="radio" id="girl" name="gender" value="женский">
+        <label for="girl">Женский</label><br>
+      </div>
 
+      <div class="group-form" title="Можно выбрать несколько вариантов">
+        <p>Ваша группа<span>*</span></p>
+        <select multiple required size="3">
+          <option>VIP</option>
+          <option>Проблемные</option>
+          <option>ОМС</option>
+        </select>
+      </div>
 
+      <div class="doctor-form">
+        <p>Лечащий врач:</p>
+        <select>
+          <option>Иванов</option>
+          <option>Захаров</option>
+          <option>Чернышева</option>
+        </select>
+      </div>
 
-      </form>
-    </div>
+      <div class="sms-form">
+        <p>Согласны на отправку sms?</p>
+        <input type="checkbox" id="scales" name="Да" checked>
+        <label for="scales">Да</label>
+      </div>
+
+    </form>
   </div>
-  <script type="text/javascript" href="script/vue.js"></script>
+
+
   <script type="text/javascript" href="script/main.js"></script>
 </body>
 

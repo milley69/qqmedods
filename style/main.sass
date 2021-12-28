@@ -60,32 +60,67 @@ header
     &:focus
       outline: none
 
-#regist-wrapper
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-  z-index: 5
-#regist
-  max-width: 500px
-  max-height: 500px
-  padding-left: 15px
-  padding-right: 15px
+#reg
+  max-width: 360px
+  background-color: #3e6595
+  padding: 0 20px 15px
   margin: 0 auto
-  background-color: red
+  text-align: center
   h1
-    text-align: center
+    margin: 0 auto 25px
+  form
+    display: flex
+    // flex-direction: column
+    align-items: center
+    color: #fff
+    flex-wrap: wrap
+    span
+      color: red
+    input
+      background: #1c529566
+      border-bottom: solid 1px #2fa99c
+      text-align: center
+      color: #fff
+    input[id="date"]::-webkit-calendar-picker-indicator
+      color: #fff
+    input[id="date"]::-webkit-datetime-edit
+      color: #fff
+      padding-left: 3em
+    input,select
+      width: 8.3em
+      font-size: 1.1em
+    label[for="scales"],
+    label[for="male"],
+    label[for="girl"]
+      font-size: 1.1em
+    input[type="checkbox"],input[type="radio"]
+      width: 1em
+    label, .gender-form, .group-form, .doctor-form, .sms-form
+      // margin: 10px 0
+      font-size: 0.9em
+    select
+      background: #3e6595
+      color: #fff
+      overflow: hidden
+      text-align: center
+    input[type="tel"]::-moz-placeholder
+      color: #fff
+    input[type="tel"]::-webkit-input-placeholder
+      color: #fff
+    input[type="tel"]:-ms-input-placeholder
+      color: #fff
+    input[type="tel"]::-ms-input-placeholder
+      color: #fff
+    input[type="tel"]::placeholder
+      color: #fff
 
-form
-  display: flex
-  flex-wrap: wrap
-
-
-
+.name,.lastname,.patronymic,.date,.tel,.gender-form,.group-form,.doctor-form,.sms-form
+  height: 70px
+  width: calc( ( 100% - 40px ) / 2 )
+  margin: 0 0 20px
+  &:nth-child(2n-1)
+    margin-left: 20px
+    margin-right: 20px
 
 
 
